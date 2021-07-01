@@ -1,0 +1,61 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+svg {
+    overflow: visible;
+}
+
+rect {
+    transition: all 0.3s ease-in;
+}
+
+rect.selected {
+    fill: orange;
+    opacity: 0.75;
+}
+
+.results_svg rect:hover {
+    transition: all 0.15s ease-in;
+    opacity: 1;
+}
+
+.results_svg rect {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    padding-top: 50px;
+	/* max-width: 1200px; */
+	font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+	font-size: 16px;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #B83A4B;
+}
+
+h1, h2, h3, h4, h5 {
+	color: orange;
+	font-weight: normal;
+}
+
+.graph-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.graph {
+	width: 50%;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 75%;
+    }
+}
